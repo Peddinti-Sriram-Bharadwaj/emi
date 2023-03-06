@@ -1,0 +1,219 @@
+/*        importing google fonts    */
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unbounded&display=swap');
+
+body
+{
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightyellow;
+}
+
+
+.myheader
+{
+    font-family : Comfortaa;
+    color : black;
+    width : 500px;
+    text-align : center;
+}
+
+.mycontainer
+{
+    display : flex;
+    flex-direction : column;
+    align-items: center;
+    width : max-content;
+    height : 100%;
+    padding : 5px;   
+}
+
+.myform
+{
+    display : flex;
+    flex-direction : column;
+
+    width : 500px;
+    padding : 10px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+
+    
+
+    font-family : Source Code Pro;
+    font-weight: bold;
+    color : black;
+
+    background-color: rgb(255, 86, 86);   
+    
+}
+
+
+.myform input
+{
+    width : 150px;
+    border-radius: 5px;
+    padding : 2px;
+    padding-left: 4px;
+
+    font-family: Unbounded;
+    
+}
+
+#compute
+{
+    width : 70px;
+    border: 2px solid black;
+    color : black;
+} 
+
+
+
+.myresults
+{
+    display : flex;
+    flex-direction: column;
+    
+    width : 500px;
+    padding : 10px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    border : 2px solid black;
+
+    font-family : Source Code Pro;
+    font-weight: bold;
+    color : black;
+
+    background-color : rgb(66, 187, 248);
+    
+}
+
+.mydisplay
+{
+    flex-direction : column;
+
+    width : 510px;
+    padding : 10px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+
+    color : black;
+
+    background-color: rgb(254, 254, 254);   
+
+}
+
+.mydisplay h3
+{
+    margin-bottom : 30px;
+    
+    text-align: center;
+    font-family: Source Code Pro;
+    color : black;
+}
+
+/* for small layouts */
+
+@media screen and (width <= 500px) {
+
+    .mycontainer
+{
+    display : flex;
+    flex-direction : column;
+    align-items: center;
+    width : 280px;
+    height : 100%;
+    padding : 5px;   
+}
+
+.mydisplay
+{
+    flex-direction : column;
+
+    width : 280px;
+    min-width: 280px;
+    padding : 10px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+
+    background-color: rgb(254, 254, 254);   
+
+}
+
+.myresults
+{
+    display : flex;
+    flex-direction: column;
+    
+    width : 280px;
+    min-width: 280px;
+    padding : 10px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    border : 2px solid black;
+
+    font-family : Source Code Pro;
+    font-weight: bold;
+
+    background-color : rgb(66, 187, 248);
+    
+}
+
+.myform
+{
+    display : flex;
+    flex-direction : column;
+
+    width : 280px;
+    min-width: 280px;
+    padding : 10px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+
+    
+
+    font-family : Source Code Pro;
+    font-weight: bold;
+
+    background-color: rgb(255, 86, 86);   
+    
+}
+
+.myheader
+{
+    font-family : Comfortaa;
+    color : black;
+    width : 200px;
+    min-width: 200px;
+    text-align : center;
+}
+
+body
+{
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightyellow;
+    width : 350px;
+    min-width : 350px;
+    margin : 0px;
+}
+
+html 
+{
+    display: flex;
+    flex-direction: column;
+    width : 350px;
+    min-width: 350px;
+    align-items: center;
+    padding : 10px;
+}
+    
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content ='EMI calculator'>
+        <title>  EMI calculator   </title>
+
+        <!-- styesheet ilnks -->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.4.0/css/responsive.dataTables.min.css">
+
+        <!-- script links -->    
+
+        <script src ="https://code.jquery.com/jquery-3.5.1.js"></script>    
+        <script src ="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js" defer></script>
+        <script src ="https://cdn.datatables.net/responsive/2.4.0/js/dataTables.responsive.min.js" defer></script>    
+
+        <script src ="index.js" defer></script>        
+
+    </head>
+
+    <body style="color : lightyellow">
+                                        <!--HEADING-->
+        <div class="myheader" style="color : black;">
+            <h1>EMI calculator</h1>
+        </div>
+
+                                       <!-- container -->
+        <div class="mycontainer">
+
+                                    <!-- form to take user prompt -->
+            <div class="myform" style ='background-color: rgb(255, 86, 86);'>
+                    
+                    <label for="amt"> Enter the amount </label>
+                    <input type="number" id="amt"><br>
+
+                    <label for="rate"> Enter the rate of interest % </label>
+                    <input type="number" id="rate"><br>
+
+                    <label for="time"> Enter the time period in years </label>
+                    <input type="number" id="time"><br>
+
+                    <button id="compute">compute</button>                 
+                    
+            </div>
+
+                                 <!-- A summary of the results   -->
+            <div class="myresults" style="background-color : rgb(66, 187, 248);">
+
+                <h3 class="myamount"></h3>
+                <h3 class ="mymonthly"></h3>
+                <h3 class="myinterest"></h3>
+                
+            </div>
+            
+
+                              <!--  monthly installments data  -->
+            <div class ='mydisplay' style="background-color: rgb(254, 254, 254);">
+
+                <h3>the monthly interests to be paid are shown in the table below</h3>
+
+
+                             <!-- a div to hold the table, and the wrapper classes induced by jquery -->
+                click on 'amount paid so far'
+                <div class="tableHolder">
+
+        <!-- after calculating results, the datatable and related wrapper classes will be added to this div -->
+
+
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        
+        
+        
+    </body>
+    
+</html>

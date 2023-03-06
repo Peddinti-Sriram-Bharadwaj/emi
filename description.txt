@@ -1,0 +1,45 @@
+Abtract :-
+Emi calculator is a responsive webpage that calculates the monthly installments for a given amount, interest rate and time period, and displays the payment details in a beautiful table.
+
+Folder contents :- 
+index.html :- structures the page
+style.css :- adds style to DOM elements
+index.js :- performs calculations, creates a table of monthly payments dynamically, adds interaction to the bare table
+            using datatables, a plugin for jquery.
+
+Tech stack used :- html, css, javascript, datatables, jquery.
+
+How to use the Webpage:-
+ -> Emi calculator is a webpage that calculates the monthly installments to be paid for a given principle amount, 
+    Interest rate and time period. (Simple interest)
+ -> By default, the table is sorted based on the 'amount paid so far' column
+ -> Click on the '+' icon to display the hidden column information. for desktop view it is 'amount due', for mobile view it is 'amount paid so far' and 'amount due' columns. 
+
+
+challenges faced in building the webpage:-
+
+ 1) Creating the dynamic table using jquery and resetting data is not a starighforward process.
+    -> everytime compute button is clicked, new data is to be displayed and old data should be erased.
+    -> clearing the table element contents alone is not sufficient, as jquery internally attaches several wrapper 
+       classes to the <table> and removing them as well each time is necessary.\
+
+ 
+
+reference to the datatable used :- https://code.jquery.com/jquery-3.5.1.js
+
+
+webpage performance :-
+lighthouse scores for desktop :-
+                              Navigation
+                                 peroformance  : 99 
+                                 accessibility : 100
+                                 best practies : 92
+                                 seo           : 100
+lighthosue scores for mobile :- 
+                              Navigation
+                                 performance    : 86
+                                 accessibility  : 100
+                                 best practices : 92
+                                 seo            : 100
+
+
