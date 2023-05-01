@@ -2,8 +2,7 @@ document.querySelector('.myresults').style.display="none";        //not displaye
 document.querySelector('.mydisplay').style.display="none";        //not displayed before computing results
 document.querySelector('#compute').addEventListener('click',function(emi){
   
-    document.querySelector('.myresults').style.display='flex';    //display elements after computing
-    document.querySelector('.mydisplay').style.display="flex";    //display elements after computing
+   //display elements after computing
 
     const parent=document.querySelector('.tableHolder');          
 
@@ -22,6 +21,45 @@ document.querySelector('#compute').addEventListener('click',function(emi){
     const p = parseFloat(document.getElementById('amt').value);
     const t = parseFloat(document.getElementById('time').value)*12;
     const r = parseFloat(((document.getElementById('rate').value)/12)/100);
+
+    function formValidation()
+    {
+      if (p=="" || t=="" || r =="")
+      {
+        alert("fill in all the fields");
+        return false
+      }
+
+      if (p==0 || t==0)
+      {
+        alert("Principal amount and time period cannot be zero");
+        return false
+      }
+
+      if(p<0 || t<0 || r<0)
+      {
+        alert("Please enter positive values only");
+        return false
+      }
+
+      return true;
+
+    }
+
+    res = formValidation();
+
+    if (!res){
+      document.getElementById('amt').value="";
+      document.getElementById('time').value="";
+      document.getElementById('rate').value="";
+
+
+    }
+    else{
+    document.querySelector('.myresults').style.display='flex';    //display elements after computing
+    document.querySelector('.mydisplay').style.display="flex"; 
+
+    
 
     //compute results
     const monthly =parseFloat((p*r*((1+r)**t))/(((1+r)**t)-1)).toFixed(2);
@@ -132,7 +170,7 @@ document.querySelector('#compute').addEventListener('click',function(emi){
         tbl.appendChild(tblBody);
         tbl.appendChild(tblfoot);
         
-
+        }
         
       }
 
