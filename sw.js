@@ -1,5 +1,3 @@
-
-
 self.addEventListener('install',event =>{
     console.log('Install event!');
 

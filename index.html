@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content ='EMI calculator'>
+        <meta name="theme-color" content="#87CEEB"/>
         <title>  EMI calculator   </title>
 
         <!-- styesheet ilnks -->
@@ -18,7 +19,7 @@
         <script src ="https://cdn.datatables.net/responsive/2.4.0/js/dataTables.responsive.min.js" defer></script>    
 
         <script src ="index.js" defer></script>   
-        
+       
 
         <!-- Service worker-->
         <script>
@@ -33,6 +34,7 @@
                     console.log('service worker registered');
                 });
             }
+            
         </script>
 
         <!-- add a manifest-->
@@ -52,7 +54,7 @@
                                     <!-- form to take user prompt -->
             <div class="myform" style ='background-color: rgb(255, 86, 86);'>
                     
-                    <label for="amt"> Enter the amount </label>
+                    <label for="amt"> Enter the Amount </label>
                     <input type="number" id="amt"><br>
 
                     <label for="rate"> Enter the rate of interest % </label>
